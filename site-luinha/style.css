@@ -1,0 +1,82 @@
+
+body{
+    background-color:rgb(31, 2, 8);
+    
+}
+.container-butao{
+    position: relative;
+    height: 100vh;
+}
+.clickme{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 75px;
+    background-color:transparent;
+    box-shadow:none;
+    border-color:white;
+    border-radius:20px;
+    font: bold 12pt Arial;
+    color: #ffffff
+}
+.clickme:hover{
+    background-color: rgba(170, 170, 170, 0.616);
+}
+.conteudo-homenagem{
+    display: none;
+}
+.musga{
+    display: block;
+   margin: 20px auto;
+}
+.swiper{
+    width: 275px;
+    height: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position:relative;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+.contador{
+    text-align: center;
+    color: white;
+    font-family: Arial, serif;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.poema{
+    margin-top: 30px;
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Georgia', serif;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    padding: 0 20px;
+}
+.fade-in{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInAnim 1s ease forwards;
+
+}
+
+@keyframes fadeInAnim{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
